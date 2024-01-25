@@ -31,7 +31,7 @@ public class ProfilePageTests extends TestBase {
 
         @Test
         @WithUserRegistration
-        @WithUserDeleting
+        //@WithUserDeleting
         @DisplayName("Проверка успешного удаления книги из профиля пользователя")
         void removeBookFromUserProfileTest() {
                 AddListOfBooksRequest booksToAdd = new AddListOfBooksRequest();

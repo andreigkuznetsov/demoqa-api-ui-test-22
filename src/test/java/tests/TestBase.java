@@ -28,7 +28,7 @@ public class TestBase {
         Configuration.browser = webDriverConfig.getBrowser();
         Configuration.pageLoadStrategy = "eager";
 
-        if (webDriverConfig.isRemote() != null) {
+        if (webDriverConfig.isRemote()) {
             Configuration.remote = webDriverConfig.remoteBrowserUrl();
 
             DesiredCapabilities capabilities = new DesiredCapabilities();
