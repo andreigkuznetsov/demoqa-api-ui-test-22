@@ -7,6 +7,7 @@ import models.AddListOfBooksRequest;
 import models.AddListOfBooksResponse;
 import models.ListOfIsbns;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import pages.ProfilePage;
 
@@ -22,6 +23,7 @@ import static specs.ApiMethodsSpecs.request;
 import static specs.ApiMethodsSpecs.response201;
 
 @DisplayName("API тесты demoqa.com WebShop")
+@Tag("all-tests")
 public class ProfilePageTests extends TestBase {
 
         TestData testData = new TestData();
