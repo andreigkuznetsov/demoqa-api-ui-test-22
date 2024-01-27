@@ -25,6 +25,6 @@ public interface WebDriverConfig extends Config {
     @DefaultValue("false")
     Boolean isRemote();
 
-    @Key("remote")
+    @Key("remoteUrl")
     String remoteBrowserUrl();
 }

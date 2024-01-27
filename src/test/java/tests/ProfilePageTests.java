@@ -58,8 +58,8 @@ public class ProfilePageTests extends TestBase {
                 });
 
                 profilePage.sendCookiesToBrowser(getRegistrationResponse().getUserId(),
-                                getGenerateTokenResponse().getExpires(),
-                                getGenerateTokenResponse().getToken())
+                                        getGenerateTokenResponse().getExpires(),
+                                        getGenerateTokenResponse().getToken())
                         .openProfilePage(getRegistrationResponse().getUserName())
                         .clickTheDeleteBookButton()
                         .confirmActionInModal()
