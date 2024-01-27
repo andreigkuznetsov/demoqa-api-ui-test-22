@@ -20,7 +20,7 @@ public class TestBase {
     static WebDriverConfig webDriverConfig = ConfigFactory.create(WebDriverConfig.class, System.getProperties());
 
     @BeforeAll
-    public static void setUp() {
+    static void setUp() {
         RestAssured.baseURI = "https://demoqa.com";
         Configuration.browserSize = webDriverConfig.getBrowserSize();
         Configuration.baseUrl = webDriverConfig.getBaseUrl();
@@ -28,7 +28,7 @@ public class TestBase {
         Configuration.browser = webDriverConfig.getBrowser();
         Configuration.pageLoadStrategy = "eager";
 
-        if (webDriverConfig.isRemote()) {
+        if (webDriverConfig.isRemote() != null) {
             Configuration.remote = webDriverConfig.remoteBrowserUrl();
 
             DesiredCapabilities capabilities = new DesiredCapabilities();
