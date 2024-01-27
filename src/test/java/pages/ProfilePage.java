@@ -56,5 +56,4 @@ public class ProfilePage {
 
         return this;
     }
-
 }
